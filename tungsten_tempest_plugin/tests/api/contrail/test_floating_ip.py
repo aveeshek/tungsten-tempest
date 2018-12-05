@@ -116,7 +116,7 @@ class FloatingIpPoolTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('ec00f8f2-e86c-414d-ae11-9c0daedf2993')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_floating_ip_pools")
+                                 rules=["create_floating_ip_pools"])
     @idempotent_id('a83ca5e8-be4b-4161-869c-f981a724cf82')
     def test_create_floating_ip_pools(self):
         """
@@ -127,7 +127,7 @@ class FloatingIpPoolTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('56dede50-6f7e-4469-ab76-e875d26500c2')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_floating_ip_pools")
+                                 rules=["list_floating_ip_pools"])
     @idempotent_id('9d20e78d-0463-4a0e-b30c-40770bee35bc')
     def test_list_floating_ip_pools(self):
         """
@@ -139,7 +139,7 @@ class FloatingIpPoolTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('a6dbcfc8-3b02-42f0-9854-4dfc7d1d254b')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_floating_ip_pool")
+                                 rules=["show_floating_ip_pool"])
     @idempotent_id('1ec3124c-c15c-4ee6-b2de-2feed9599e38')
     def test_show_floating_ip_pool(self):
         """
@@ -151,7 +151,7 @@ class FloatingIpPoolTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('b60a411d-2b9a-4a72-a1fb-f1157fff6f8d')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_floating_ip_pool")
+                                 rules=["update_floating_ip_pool"])
     @idempotent_id('6563f2e7-ae6b-483b-8c07-0111efc86817')
     def test_update_floating_ip_pool(self):
         """
@@ -165,7 +165,7 @@ class FloatingIpPoolTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('9ed5a91c-afb5-45df-a0f0-526356891386')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_floating_ip_pool")
+                                 rules=["delete_floating_ip_pool"])
     @idempotent_id('c4b449ae-2f12-49cf-9dec-2b21c143aff6')
     def test_delete_floating_ip_pool(self):
         """
@@ -217,7 +217,7 @@ class FloatingIpTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('b342f573-20a4-4ac7-9642-b0fbf0a56bd9')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_floating_ips")
+                                 rules=["create_floating_ips"])
     @idempotent_id('ff05f70f-9db9-43cb-a5ce-38cbbef2c430')
     def test_create_floating_ips(self):
         """
@@ -228,7 +228,7 @@ class FloatingIpTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('4c64ee6a-9183-43ac-88d5-0b8200e49f90')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_floating_ips")
+                                 rules=["list_floating_ips"])
     @idempotent_id('e56046f9-32f9-41ce-9c1b-b982997ac347')
     def test_list_floating_ips(self):
         """
@@ -240,7 +240,7 @@ class FloatingIpTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('724b1bdd-aabf-4780-93f4-cb4a90fa59fa')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_floating_ip")
+                                 rules=["show_floating_ip"])
     @idempotent_id('293f2c26-4101-4a2f-86d4-feb2878bd511')
     def test_show_floating_ip(self):
         """
@@ -252,7 +252,7 @@ class FloatingIpTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('19224c90-7339-4382-b4e9-8f4dc013598f')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_floating_ip")
+                                 rules=["update_floating_ip"])
     @idempotent_id('a09283c9-73d3-42f7-876d-f33040686d6d')
     def test_update_floating_ip(self):
         """
@@ -266,7 +266,7 @@ class FloatingIpTest(BaseFloatingIpTest):
 
     @decorators.idempotent_id('13d7e846-2080-4de4-a3ca-90ae25af6e9d')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_floating_ip")
+                                 rules=["delete_floating_ip"])
     @idempotent_id('a26f162f-da56-4153-aed6-bffccba92bc7')
     def test_delete_floating_ip(self):
         """

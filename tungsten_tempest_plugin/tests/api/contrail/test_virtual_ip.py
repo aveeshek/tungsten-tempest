@@ -59,7 +59,7 @@ class VirtualIPTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('727c2b91-5a46-45ab-8c17-9c57db3c2ec0')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_virtual_ips")
+                                 rules=["list_virtual_ips"])
     @idempotent_id('92303eee-bd96-48bc-a02c-39950bd19a21')
     def test_list_virtual_ips(self):
         """
@@ -70,7 +70,7 @@ class VirtualIPTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('f49281de-9b72-4309-bb27-f39a35d0c089')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_virtual_ips")
+                                 rules=["create_virtual_ips"])
     @idempotent_id('e0070888-995d-46ab-91fc-db1412eba2f7')
     def test_create_virtual_ips(self):
         """
@@ -81,7 +81,7 @@ class VirtualIPTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('55eca817-1a06-47f9-8a74-c25059ce577a')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_virtual_ip")
+                                 rules=["show_virtual_ip"])
     @idempotent_id('2a4b3abd-c6f7-4d82-aa31-02e53d2a8fb9')
     def test_show_virtual_ip(self):
         """
@@ -93,7 +93,7 @@ class VirtualIPTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('d3c15795-efbf-4f7c-912b-565ca0b922aa')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_virtual_ip")
+                                 rules=["update_virtual_ip"])
     @idempotent_id('0e975c92-62dc-4e6e-82cc-8cf37da3c5b2')
     def test_update_virtual_ip(self):
         """
@@ -105,7 +105,7 @@ class VirtualIPTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('c6a801f0-229e-4b34-a5fe-8643896af7ad')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_virtual_ip")
+                                 rules=["delete_virtual_ip"])
     @idempotent_id('fd0b2635-36bd-4345-97b7-9c0a57372eba')
     def test_delete_virtual_ip(self):
         """

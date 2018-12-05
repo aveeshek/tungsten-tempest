@@ -60,7 +60,7 @@ class NamespaceContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('e4bd5d1e-0a97-4001-aba2-9142c1a8f164')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_namespaces")
+                                 rules=["list_namespaces"])
     @idempotent_id('e436390d-d669-4047-9838-421ea93e94be')
     def test_list_namespaces(self):
         """
@@ -71,7 +71,7 @@ class NamespaceContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('f16c8781-850c-4f36-b317-cb19c2c47627')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_namespaces")
+                                 rules=["create_namespaces"])
     @idempotent_id('503ae445-7e67-4db6-989a-af0b7f9a7e95')
     def test_create_namespaces(self):
         """
@@ -82,7 +82,7 @@ class NamespaceContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('fba2066e-0d2b-4ecd-98c6-8dd8afa765af')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_namespace")
+                                 rules=["show_namespace"])
     @idempotent_id('f916971a-7c07-4386-b887-8b78d8a1e528')
     def test_show_namespace(self):
         """
@@ -94,7 +94,7 @@ class NamespaceContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('ffc17714-e0c2-4f4f-b1e1-330f5d5ada30')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_namespace")
+                                 rules=["update_namespace"])
     @idempotent_id('3649f65a-922a-4b8a-9b8b-520c333e192e')
     def test_update_namespace(self):
         """
@@ -106,7 +106,7 @@ class NamespaceContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('c5230a1b-ea22-43b3-ab6c-51227aec2e53')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_namespace")
+                                 rules=["delete_namespace"])
     @idempotent_id('80e736bf-fc7d-4274-8173-a50c883776a9')
     def test_delete_namespace(self):
         """

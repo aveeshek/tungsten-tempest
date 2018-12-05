@@ -73,7 +73,7 @@ class NetworksTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('fac38c07-b603-4b20-af66-3288a52cb5ea')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_virtual_networks")
+                                 rules=["list_virtual_networks"])
     @idempotent_id('375ebc8d-dc52-4d9c-877b-85aba35b1539')
     def test_list_virtual_networks(self):
         """
@@ -84,7 +84,7 @@ class NetworksTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('d0f3035d-5761-4b99-accc-a56a62682fca')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_virtual_networks")
+                                 rules=["create_virtual_networks"])
     @idempotent_id('375ebc8d-dc52-4d9c-877b-96aba35b2530')
     def test_create_virtual_networks(self):
         """
@@ -95,7 +95,7 @@ class NetworksTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('abd79717-9b8e-4047-9412-53b1ee7673e7')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_virtual_network")
+                                 rules=["update_virtual_network"])
     @idempotent_id('375ebc8d-dc52-4d9c-566b-150a025c1237')
     def test_update_virtual_network(self):
         """
@@ -109,7 +109,7 @@ class NetworksTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('7df9df6a-2840-44e7-abca-41770d141992')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_virtual_network")
+                                 rules=["delete_virtual_network"])
     @idempotent_id('375ebc8d-dc52-4d9c-877b-17bcb53c3641')
     def test_delete_virtual_network(self):
         """
@@ -121,7 +121,7 @@ class NetworksTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('39c1bea6-9f2f-4920-850b-be01cd0a4014')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_virtual_network")
+                                 rules=["show_virtual_network"])
     @idempotent_id('375ebc8d-dc52-4d9c-877b-27c1a1242a81')
     def test_show_virtual_network(self):
         """

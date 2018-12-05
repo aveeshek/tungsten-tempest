@@ -74,7 +74,7 @@ class ContrailDatabaseTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('fbf74117-4fdb-4b95-9469-a71b708afd47')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_database_nodes")
+                                 rules=["list_database_nodes"])
     @idempotent_id('5ae6f965-6161-443f-b19e-dfa7b364c533')
     def test_list_database_nodes(self):
         """
@@ -88,7 +88,7 @@ class ContrailDatabaseTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('6749a9db-54ff-448d-a590-5050a4db7946')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_database_node")
+                                 rules=["show_database_node"])
     @idempotent_id('4a07d9a8-7b99-43bd-b628-06c023993aab')
     def test_show_database_node(self):
         """
@@ -103,7 +103,7 @@ class ContrailDatabaseTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('672bb09f-e31b-4492-9858-a190d701949f')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_database_nodes")
+                                 rules=["create_database_nodes"])
     @idempotent_id('b9aa9c6b-9381-44f0-94fb-e4523bf2a87e')
     def test_create_database_nodes(self):
         """
@@ -116,7 +116,7 @@ class ContrailDatabaseTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('f959251d-e925-4f98-a297-3bcde77fbf0d')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_database_node")
+                                 rules=["update_database_node"])
     @idempotent_id('6e59f393-0e55-4327-871e-7f0ad53f2e17')
     def test_update_database_node(self):
         """
@@ -134,7 +134,7 @@ class ContrailDatabaseTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('d6981e37-3b04-4883-8411-12fc69d2aa98')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_database_node")
+                                 rules=["delete_database_node"])
     @idempotent_id('0cbc5a52-d7e7-4a1c-a85d-6bf44012d99b')
     def test_delete_database_node(self):
         """

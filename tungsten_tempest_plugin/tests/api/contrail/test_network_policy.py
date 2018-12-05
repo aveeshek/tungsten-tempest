@@ -61,7 +61,7 @@ class NetworkPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('8f7cac43-758f-4e7f-99dc-c71d6b38c75a')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_network_policys")
+                                 rules=["list_network_policys"])
     @idempotent_id('fa2a28f3-a8bb-4908-95b9-1e11cf58b16f')
     def test_list_policys(self):
         """
@@ -72,7 +72,7 @@ class NetworkPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('7981c0be-ca0b-4d1f-9f92-c33aaa1d93c7')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_network_policys")
+                                 rules=["create_network_policys"])
     @idempotent_id('a30be228-afba-40c9-8678-ae020db68d79')
     def test_create_network_policys(self):
         """
@@ -83,7 +83,7 @@ class NetworkPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('5f028687-0599-409f-a785-97b6d131f48b')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_network_policy")
+                                 rules=["show_network_policy"])
     @idempotent_id('6cefe92e-8936-49a6-bce0-12da3396e7ab')
     def test_show_network_policy(self):
         """
@@ -95,7 +95,7 @@ class NetworkPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('9a58b489-7600-4369-9b11-696ae46d8457')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_network_policy")
+                                 rules=["update_network_policy"])
     @idempotent_id('1d470505-3ad4-4870-87d7-3f0b0f9fc635')
     def test_update_network_policy(self):
         """
@@ -107,7 +107,7 @@ class NetworkPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('acabbe91-6823-446f-9590-508655a57316')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_network_policy")
+                                 rules=["delete_network_policy"])
     @idempotent_id('aae9018f-e7a2-4a75-a68e-afd6c380640e')
     def test_delete_network_policy(self):
         """

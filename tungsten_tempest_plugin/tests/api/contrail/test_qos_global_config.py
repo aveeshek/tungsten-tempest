@@ -75,7 +75,7 @@ class QosContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('aad1e7b0-cbe0-48d9-baf5-e4ca6db48a0b')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_global_qos_configs")
+                                 rules=["list_global_qos_configs"])
     @idempotent_id('74e5a7b7-f538-4be3-90a5-6862b07fb118')
     def test_list_global_qos_configs(self):
         """
@@ -89,7 +89,7 @@ class QosContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('c315d22e-7f9c-47cc-986b-b3245df39f7d')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_global_qos_configs")
+                                 rules=["create_global_qos_configs"])
     @idempotent_id('d7da1ca0-7bf7-4d1b-982c-820cd37fe9fa')
     def test_create_global_qos_configs(self):
         """
@@ -102,7 +102,7 @@ class QosContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('4dc7e8d1-4447-455e-ac7e-7d5bde6d8de0')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_global_qos_config")
+                                 rules=["show_global_qos_config"])
     @idempotent_id('e3bd44e0-19a9-46e7-83d3-268dcc537ad9')
     def test_show_global_qos_config(self):
         """
@@ -116,7 +116,7 @@ class QosContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('1783445a-a962-46b8-a5a9-d58c04d1d7e5')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_global_qos_config")
+                                 rules=["update_global_qos_config"])
     @idempotent_id('f834c4d7-bc81-4c59-bada-c4d752219a6e')
     def test_update_global_qos_config(self):
         """
@@ -133,7 +133,7 @@ class QosContrailTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('a26f0e42-06e1-4fce-b4cb-654aa341e3d6')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_global_qos_config")
+                                 rules=["delete_global_qos_config"])
     @idempotent_id('78b9a3da-4eb1-4f4b-8a23-a8a2e733b515')
     def test_delete_global_qos_config(self):
         """

@@ -61,7 +61,7 @@ class RoutingPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('a430e541-59a4-4c9a-8fe2-1a82701b6377')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="list_routing_policys")
+                                 rules=["list_routing_policys"])
     @idempotent_id('fe25a306-bc4f-42b3-91ca-38df01e35345')
     def test_list_routing_policys(self):
         """
@@ -72,7 +72,7 @@ class RoutingPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('47b668c8-f2d3-4713-be33-5345ca22c2e8')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="create_routing_policys")
+                                 rules=["create_routing_policys"])
     @idempotent_id('f8ca5e30-8bb3-410f-8618-8fdca70bda06')
     def test_create_routing_policys(self):
         """
@@ -83,7 +83,7 @@ class RoutingPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('66b8679d-66f9-4ccf-b54b-4c1d2de32615')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="show_routing_policy")
+                                 rules=["show_routing_policy"])
     @idempotent_id('3421e84e-3e2a-452a-9a26-b2caf00b1cbc')
     def test_show_routing_policy(self):
         """
@@ -95,7 +95,7 @@ class RoutingPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('99490df1-10ea-4b2c-89c2-fef6406d0156')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="update_routing_policy")
+                                 rules=["update_routing_policy"])
     @idempotent_id('9fc1f44f-c8e2-4f5a-8239-e9b783f55d94')
     def test_update_routing_policy(self):
         """
@@ -107,7 +107,7 @@ class RoutingPolicyTest(rbac_base.BaseContrailTest):
 
     @decorators.idempotent_id('092d54ea-1954-4111-b4aa-61d534e8f1f1')
     @rbac_rule_validation.action(service="Contrail",
-                                 rules="delete_routing_policy")
+                                 rules=["delete_routing_policy"])
     @idempotent_id('24f1cd7a-2917-4b81-a0a3-a40ed2d40c7d')
     def test_delete_routing_policy(self):
         """
